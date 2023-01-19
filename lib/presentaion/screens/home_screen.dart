@@ -114,9 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   return SizedBox(
                       height: 50,
                       child: Padding(
-                        padding: const EdgeInsets.only(
-                          left: 10,
-                        ),
+                        padding: const EdgeInsets.only(left: 10),
                         child: Row(
                           children: [
                             Container(

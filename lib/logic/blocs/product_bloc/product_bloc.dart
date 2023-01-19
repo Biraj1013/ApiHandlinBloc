@@ -7,7 +7,7 @@ import '../../../data/repositories/products_repo.dart';
 
 class ProductBloc extends Bloc<ProductEvent, ProductState> {
   ProductBloc() : super(ProductLoadingState()) {
-    on<ProductFetchEvent>((event, emit) async {
+    on<ProductFetchEvent>((ProductFetchEvent event, Emitter emit) async {
       ProductsRepository productsRepository = ProductsRepository();
       try {
         List<ProductModel> products = await productsRepository.fetchData();
